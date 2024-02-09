@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "task05-d8e01": {
+      "hosting": {
+        "task05": [
+          "task05-d8e01"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "task05-d8e01"
+  }
+}

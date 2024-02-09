@@ -37,6 +37,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/purple-green.css",
               "src/styles.scss"
             ],
             "scripts": [],
@@ -102,10 +103,28 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/purple-green.css",
               "src/styles.scss"
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "task05:build:production",
+              "serveTarget": "task05:serve:production"
+            },
+            "development": {
+              "buildTarget": "task05:build:development",
+              "serveTarget": "task05:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
